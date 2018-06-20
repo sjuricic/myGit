@@ -6,12 +6,24 @@ package com.myteam2.pro3;
 
 public class do1 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public do1() {
-    }
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
 
+	public do1() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public do1(java.lang.String name) {
+		this.name = name;
+	}
 
 }
